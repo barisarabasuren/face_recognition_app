@@ -42,7 +42,6 @@ const App = () => {
     const calculateFaceLocation = (data) => {
       if(imageUrl !== 0) {
         const clarifaiFace = data.outputs[0].data.regions;
-        console.log(clarifaiFace)
         const image = document.getElementById('inputimage');
         const width = Number(image.width);
         const height = Number(image.height);
