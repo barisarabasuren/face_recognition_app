@@ -1,7 +1,7 @@
 import FaceRecognition from '../faceRecognition/FaceRecognition';
 import './urlInput.css';
 
-const UrlInput = ( {onInputChange, onSubmit, imageUrl, box } ) => {
+const UrlInput = ( {onInputChange, onSubmit, renderedImage, box } ) => {
     return(
         <form onSubmit= {onSubmit}>
             <p className="f4 fw4 center">
@@ -17,7 +17,7 @@ const UrlInput = ( {onInputChange, onSubmit, imageUrl, box } ) => {
                     <span>Detact</span>
                 </button>
             </div>
-            <FaceRecognition imageUrl={imageUrl} box={box}/>
+            <FaceRecognition renderedImage={renderedImage} box={box}/>
         </form>          
     )
 }
