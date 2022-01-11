@@ -4,8 +4,8 @@ import UrlInput from './urlInput/UrlInput';
 
 const ImageLinkForm = ( {onInputChange, onSubmit, renderedImage, box, user } ) => {
     return(
-        <div>
-            <div className="mw8 center bg-white br3 pa4 ba b--black-10 tc shadow-3">
+        <div className='form-wrapper'>
+            <div className="form tc">
                 <Rank user={user} />
                 <Animation/>
                 <UrlInput 

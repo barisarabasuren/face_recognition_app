@@ -140,10 +140,16 @@ const App = () => {
   }, [imageUrl, updateEntries])
 
   return (
-    <div className='App body'>
-      <Navigation onRouteChange={onRouteChange} handleSignOut={handleSignOut} isSignIn={isSignIn}/>
+    <div className='body'>
+      <Navigation 
+        onRouteChange = {onRouteChange} 
+        handleSignOut = {handleSignOut} 
+        isSignIn = {isSignIn}
+        route = {route}
+        />
+      <div className=''>
       {route === 'home'
-      ? <div className='mt5 mb5'>
+      ? 
           <ImageLinkForm 
             onInputChange={onInputChange}
             onSubmit={onSubmit}
@@ -151,13 +157,13 @@ const App = () => {
             box={box}
             user={user}
           /> 
-        </div>
       : (
         route === 'signin'
         ? <SignIn loadUser={loadUser} onRouteChange={onRouteChange}/>
         :<Register loadUser={loadUser} onRouteChange={onRouteChange}/>
         )
       }
+      </div>
     </div>
   );
 }
