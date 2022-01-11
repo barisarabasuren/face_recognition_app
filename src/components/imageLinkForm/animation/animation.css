@@ -1,20 +1,13 @@
-:root {
-    --bg_color: #ff70a6;
-}
-
 @keyframes grow {
     0% {
         transform: scale(1);
-        background-color: #ff70a6;
     }
     100% {
         transform: scale(1.25);
-        background-color: #e9ff70;
     }
 }
 
 .animation {
-    background-color: var(--bg_color);
     animation: grow;
     animation-duration: 0.75s;
     animation-delay: 0s;
