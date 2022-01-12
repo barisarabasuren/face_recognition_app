@@ -1,8 +1,11 @@
+# Frontend 
+
 git clone https://github.com/barisarabasuren/face_recognition_app.git
 
 npm install
 
 npm start
 
+# Backend
 
-backend repository https://github.com/barisarabasuren/face_recognition_app_api
+https://github.com/barisarabasuren/face_recognition_app_api
